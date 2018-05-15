@@ -1,5 +1,8 @@
 # study-rust
 
+## Next
+https://rust-lang-ja.github.io/the-rust-programming-language-ja/1.6/book/loops.html
+
 ## OS
 Ubuntu 17.10
 
@@ -18,6 +21,9 @@ cargo build --release
 
 ## run
 cargo run
+
+## run with stacktrace
+RUST_BACKTRACE=1 cargo run
 
 ## make project
 cargo new prj0x --bin
