@@ -1,7 +1,7 @@
 # study-rust
 
 ## Next
-https://rust-lang-ja.github.io/the-rust-programming-language-ja/1.6/book/loops.html
+https://rust-lang-ja.github.io/the-rust-programming-language-ja/1.6/book/ownership.html
 
 ## OS
 Ubuntu 17.10

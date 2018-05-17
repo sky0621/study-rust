@@ -1,0 +1,6 @@
+[package]
+name = "prj04"
+version = "0.1.0"
+authors = ["sky0621 <sky14work@gmail.com>"]
+
+[dependencies]
