@@ -1,5 +1,13 @@
 # study-rust
 
+## Ref
+
+https://www.rust-lang.org/ja-JP/
+
+https://www.rust-lang.org/ja-JP/documentation.html
+
+http://rust-lang-ja.github.io/the-rust-programming-language-ja/1.6/book/
+
 ## Next
 https://rust-lang-ja.github.io/the-rust-programming-language-ja/1.6/book/ownership.html
 
