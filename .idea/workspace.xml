@@ -21,37 +21,13 @@
     </expand>
     <select />
   </component>
+  <component name="CargoProjects">
+    <cargoProject FILE="$PROJECT_DIR$/guessing_game/Cargo.toml" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="0b8e50b7-6ced-4f07-85ef-4b0c1379d7bd" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/old/chap03_Learn_Rust/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/chap03_Learn_Rust/chap0301_guessing_game/guessing_game/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/chap03_Learn_Rust/chap0301_guessing_game/guessing_game/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/chap03_Learn_Rust/chap0302_dining_philosophers/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/chap03_Learn_Rust/chap0302_dining_philosophers/dining_philosophers/Cargo.toml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/chap03_Learn_Rust/chap0302_dining_philosophers/dining_philosophers/src/main.rs" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/chap04_Syntax_and_Semantics/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/old/chap05_Effective_Rust/.gitkeep" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap03_Learn_Rust/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap03_Learn_Rust/chap0301_guessing_game/guessing_game/Cargo.lock" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap03_Learn_Rust/chap0301_guessing_game/guessing_game/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap03_Learn_Rust/chap0301_guessing_game/guessing_game/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap03_Learn_Rust/chap0302_dining_philosophers/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap03_Learn_Rust/chap0302_dining_philosophers/dining_philosophers/Cargo.toml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap03_Learn_Rust/chap0302_dining_philosophers/dining_philosophers/src/main.rs" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap04_Syntax_and_Semantics/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/chap05_Effective_Rust/.gitkeep" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/guessing_game/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/guessing_game/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/guessing_game/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/guessing_game/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/prj01/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/prj01/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/prj01/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/prj01/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/prj01/src/main2.rs" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/prj01/src/main2.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/prj02/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/prj02/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/prj02/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/prj02/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/prj03/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/prj03/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/prj03/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/prj03/src/main.rs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/prj04/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/prj04/Cargo.toml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/temp/prj04/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/old/temp/prj04/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/study-rust.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/study-rust.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -76,7 +52,7 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/guessing_game" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="org.rust.cargo.project.model.PROJECT_DISCOVERY" value="true" />
     <property name="settings.editor.selected.configurable" value="reference.settingsdialog.project.terraform" />
@@ -123,7 +99,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1597797035140</updated>
-      <workItem from="1597797036243" duration="1567000" />
+      <workItem from="1597797036243" duration="4123000" />
     </task>
     <servers />
   </component>
@@ -150,10 +126,10 @@
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
     <state x="2634" y="367" width="486" height="372" key="#com.intellij.tools.ToolEditorDialog/0.30.1920.1022/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597798284520" />
-    <state x="2663" y="316" width="428" height="494" key="FileChooserDialogImpl" timestamp="1597798350050">
+    <state x="2663" y="316" width="428" height="494" key="FileChooserDialogImpl" timestamp="1597837350749">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
-    <state x="2663" y="316" width="428" height="494" key="FileChooserDialogImpl/0.30.1920.1022/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597798350050" />
+    <state x="2663" y="316" width="428" height="494" key="FileChooserDialogImpl/0.30.1920.1022/1920.0.1920.1080@1920.0.1920.1080" timestamp="1597837350749" />
     <state width="1866" height="281" key="GridCell.Tab.0.bottom" timestamp="1597798364887">
       <screen x="1920" y="0" width="1920" height="1080" />
     </state>
