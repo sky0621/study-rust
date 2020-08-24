@@ -2,13 +2,11 @@
 
 ## Ref
 
+https://doc.rust-jp.rs/book/second-edition/
+
+### Old
 https://www.rust-lang.org/ja/learn
-
-### THE BOOKを読もう！
 https://doc.rust-lang.org/book/
-
-## Next
-https://rust-lang-ja.github.io/the-rust-programming-language-ja/1.6/book/ownership.html
 
 ## OS
 ```
