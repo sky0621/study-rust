@@ -1,10 +1,14 @@
 fn main() {
+    println!("PART 1");
     part1();
     println!();
+    println!("PART 2");
     part2();
     println!();
+    println!("PART 3");
     part3();
     println!();
+    println!("PART 4");
     part4();
     println!();
 }
@@ -75,7 +79,10 @@ fn part3() {
     println!("The largest char is {}", result);
 }
 
-fn largest<T>(list: &[T]) -> T {
+fn largest<T>(list: &[T]) -> T
+where
+    T: PartialOrd + Copy,
+{
     let mut largest = list[0];
 
     for &item in list.iter() {
