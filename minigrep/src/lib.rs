@@ -10,7 +10,9 @@ pub fn run(cfg: Config) -> Result<(), Box<Error>> {
     // ?演算子は、現在の関数からエラー値を返す
     f.read_to_string(&mut contents)?;
 
-    println!("With text:\n{}", contents);
+    for line in search(&cfg.query, &contents) {
+        println!("{}", line);
+    }
 
     Ok(())
 }
@@ -27,5 +29,34 @@ impl Config {
         let query = args[1].clone();
         let filename = args[2].clone();
         Ok(Config { query, filename })
+    }
+}
+
+pub fn search<'a>(query: &'a str, contents: &'a str) -> Vec<&'a str> {
+    let mut results = Vec::new();
+    for line in contents.lines() {
+        if line.contains(query) {
+            results.push(line);
+        }
+    }
+    results
+}
+
+#[cfg(test)]
+mod test {
+    use super::*;
+
+    #[test]
+    fn one_result() {
+        let query = "duct";
+        // Rustは
+        // 安全で速く生産性も高い。
+        // 3つ選んで。
+        let contents = "\
+Rust:
+safe, fast, productive.
+Pick three.";
+
+        assert_eq!(vec!["safe, fast, productive."], search(query, contents));
     }
 }
