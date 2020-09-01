@@ -1,3 +1,4 @@
+use std::collections::HashMap;
 use std::thread;
 use std::time::Duration;
 
@@ -41,8 +42,7 @@ where
     // 計算クロージャ
     calculation: T,
     // 計算クロージャによる計算結果を保持する
-    // 初期状態では None
-    value: Option<u32>,
+    value_map: HashMap<u32, u32>,
 }
 impl<T> Cacher<T>
 where
@@ -51,18 +51,20 @@ where
     fn new(calculation: T) -> Cacher<T> {
         Cacher {
             calculation,
-            value: None,
+            value_map: HashMap::new(),
         }
     }
 
     fn value(&mut self, arg: u32) -> u32 {
-        match self.value {
-            Some(v) => v,
-            None => {
-                let v = (self.calculation)(arg);
-                self.value = Some(v);
-                v
+        if self.value_map.contains_key(&arg) {
+            match self.value_map.get(&arg) {
+                Some(v) => *v,
+                None => 0,
             }
+        } else {
+            let v = (self.calculation)(arg);
+            self.value_map.insert(arg, v);
+            v
         }
     }
 }
@@ -114,7 +116,7 @@ mod tests {
     #[test]
     fn call_with_different_values() {
         let mut c = Cacher::new(|num| num);
-        let v1 = c.value(1);
+        let _v1 = c.value(1);
         let v2 = c.value(2);
         assert_eq!(2, v2);
     }
