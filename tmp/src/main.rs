@@ -1,42 +1,26 @@
 use std::collections::HashMap;
 
 fn main() {
-    println!("Hello, world!");
-    let mut c = Cat::new(|n| n * n);
-    let r = c.value(33);
-    println!("{}", r);
+    const t: Fn(u32) -> u32 = |n| n * n;
+    let abc: Abc<u32, u32, t> = Abc::new();
 }
 
-struct Cat<T>
+struct Abc<K, V, T>
 where
-    T: Fn(u32) -> u32,
+    T: Fn(K) -> V,
 {
-    // 計算クロージャ
-    calculation: T,
-    // 計算クロージャによる計算結果を保持する
-    value_map: HashMap<u32, u32>,
+    m: HashMap<K, V>,
+    c: T,
 }
-impl<T> Cat<T>
-where
-    T: Fn(u32) -> u32,
-{
-    fn new(calculation: T) -> Cat<T> {
-        Cat {
-            calculation,
-            value_map: HashMap::new(),
-        }
-    }
 
-    fn value(&mut self, arg: u32) -> u32 {
-        if self.value_map.contains_key(&arg) {
-            match self.value_map.get(&arg) {
-                Some(v) => *v,
-                None => 0,
-            }
-        } else {
-            let v = (self.calculation)(arg);
-            self.value_map.insert(arg, v);
-            v
+impl<K, V, T> Abc<K, V, T>
+where
+    T: Fn(K) -> V,
+{
+    fn new() -> Abc<K, V, T> {
+        Abc {
+            m: HashMap::new(),
+            c: (),
         }
     }
 }
