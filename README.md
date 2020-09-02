@@ -4,6 +4,16 @@
 
 https://doc.rust-jp.rs/book/second-edition/
 
+### Cargo
+
+https://doc.rust-lang.org/cargo/
+
+### Tool
+
+#### clippy
+
+https://github.com/rust-lang/rust-clippy
+
 ### Old
 https://www.rust-lang.org/ja/learn
 https://doc.rust-lang.org/book/
@@ -158,3 +168,10 @@ println!("{}", s);        // これは`hello, world!`と出力する
 #### 13.1 クロージャ
 - Rustのクロージャは、変数に保存したり、引数として他の関数に渡すことのできる匿名関数
 - クロージャは、3つの方法で環境から値をキャプチャでき、この方法は関数が引数を取れる3つの方法に直に対応します: 所有権を奪う、可変で借用する、不変で借用するです。
+
+#### 13.2 イテレータ
+- Rustにおいて、イテレータは怠惰(イテレータを使い込んで消費するメソッドを呼ぶまで何の効果もない)
+
+#### 14.1 プロファイル
+- devプロファイル(cargo buildコマンドを実行したときに使用)は、開発中に役に立つデフォルト設定
+- releaseプロファイル(cargo build --releaseコマンドを実行したときに使用)は、 リリース用の設定

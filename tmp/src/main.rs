@@ -1,26 +1,13 @@
-use std::collections::HashMap;
+extern crate tmp;
+
+use tmp::lib1;
+use tmp::mlib1::say_mlib1;
+use tmp::pkg01::pkg01other::say_pkg01other;
+use tmp::pkg01::say_pkg01;
 
 fn main() {
-    const t: Fn(u32) -> u32 = |n| n * n;
-    let abc: Abc<u32, u32, t> = Abc::new();
-}
-
-struct Abc<K, V, T>
-where
-    T: Fn(K) -> V,
-{
-    m: HashMap<K, V>,
-    c: T,
-}
-
-impl<K, V, T> Abc<K, V, T>
-where
-    T: Fn(K) -> V,
-{
-    fn new() -> Abc<K, V, T> {
-        Abc {
-            m: HashMap::new(),
-            c: (),
-        }
-    }
+    lib1();
+    say_mlib1();
+    say_pkg01();
+    say_pkg01other();
 }
