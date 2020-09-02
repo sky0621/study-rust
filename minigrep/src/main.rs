@@ -6,8 +6,8 @@ use std::io::Read;
 use std::{env, process};
 
 fn main() {
-    let args: Vec<String> = env::args().collect();
-    let cfg = Config::new(&args).unwrap_or_else(|err| {
+    // MEMO: env::args()が返すイテレータの所有権を渡す。
+    let cfg = Config::new(env::args()).unwrap_or_else(|err| {
         eprintln!("Problem parsing arguments: {}", err);
         process::exit(1);
     });
