@@ -1,5 +1,5 @@
 [package]
-name = "entrypoint"
+name = "book_se_ch15_Box"
 version = "0.1.0"
 authors = ["sky0621 <sky14work@gmail.com>"]
 edition = "2018"

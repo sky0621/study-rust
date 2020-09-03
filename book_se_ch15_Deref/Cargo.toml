@@ -1,5 +1,5 @@
 [package]
-name = "ch15_1"
+name = "book_se_ch15_Deref"
 version = "0.1.0"
 authors = ["sky0621 <sky14work@gmail.com>"]
 edition = "2018"
