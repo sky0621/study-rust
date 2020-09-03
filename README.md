@@ -179,3 +179,64 @@ println!("{}", s);        // これは`hello, world!`と出力する
 #### 14.1 プロファイル
 - devプロファイル(cargo buildコマンドを実行したときに使用)は、開発中に役に立つデフォルト設定
 - releaseプロファイル(cargo build --releaseコマンドを実行したときに使用)は、 リリース用の設定
+
+#### 14.3 ワークスペース
+
+<pre>
+$ cargo new adder --bin
+$ cargo new addone --lib
+</pre>
+
+```
+book_se_ch14_cargo
+  |- adder
+  |    |- src
+  |    |    |- main.rs ③
+  |    |- Cargo.toml ②
+  |- addone
+  |    |- src
+  |    |    |- lib.rs ④
+  |    |- Cargo.toml
+  |- Cargo.lock
+  |- Cargo.toml ①
+```
+
+①
+<pre>
+[workspace]
+
+members = [
+    "adder",
+    "addone",
+]
+</pre>
+
+②
+<pre>
+[package]
+name = "adder"
+　〜〜
+
+[dependencies]
+
+addone = { path = "../addone" }
+</pre>
+
+③
+<pre>
+extern crate addone;
+
+fn main() {
+    let num = 10;
+    println!("Hello, world! {} plus one is {}!", num, addone::add_one(num));
+}
+</pre>
+
+④
+<pre>
+pub fn add_one(x: i32) -> i32 {
+    x + 1
+}
+</pre>
+
+#### 15 スマートポインタ
