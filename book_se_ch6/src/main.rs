@@ -1,4 +1,47 @@
+use book_se_ch6::{plus_one, IpAddr};
+
+mod lib;
+
 fn main() {
+    // part1()
+    part2()
+}
+
+pub trait TReviewState {
+    fn requestReview(&self);
+}
+
+pub struct UnRequested {
+    pub id: i32,
+}
+
+impl TReviewState for UnRequested {
+    fn requestReview(&self) {
+        println!("UnRequested:{:?}", self.id);
+    }
+}
+
+#[derive(Debug)]
+pub enum ReviewState<TReviewState> {
+    UnRequested: TReviewState,
+    Waiting(i32),
+    Pending(i32),
+    Reject(i32),
+    Approve(i32),
+}
+impl<TReviewState> ReviewState<TReviewState> {
+    pub fn call(&self) {
+        self.requestReview();
+    }
+}
+
+fn part2() {
+    let id = 100;
+    let ur = ReviewState::UnRequested { id };
+    println!("{:?}", ur);
+}
+
+fn part1() {
     println!("Hello, world!");
     let home = IpAddr::V4(127, 0, 0, 1);
     println!("{:?}", home);
@@ -33,32 +76,5 @@ fn main() {
 
     if let Some(0u8) = some_u8_value {
         println!("eight!");
-    }
-}
-
-enum IpAddrKind {
-    V4,
-    V6,
-}
-
-#[derive(Debug)]
-enum IpAddr {
-    V4(u8, u8, u8, u8),
-    V6(String),
-}
-
-impl IpAddr {
-    fn call(&self) {
-        println!("{:?}", self);
-    }
-}
-
-fn plus_one(x: Option<i32>) -> Option<i32> {
-    match x {
-        None => None,
-        Some(i) => {
-            println!("{}", i);
-            Some(i + 1)
-        }
     }
 }
