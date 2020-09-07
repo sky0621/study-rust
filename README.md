@@ -4,6 +4,8 @@
 
 https://doc.rust-jp.rs/book/second-edition/
 
+https://doc.rust-jp.rs/rust-by-example-ja/index.html
+
 [裏本]
 https://doc.rust-jp.rs/rust-nomicon-ja/index.html
 
@@ -297,4 +299,13 @@ pub fn add_one(x: i32) -> i32 {
 ```
 　・戻り値の型が Self でない。
 　・ジェネリックな型引数がない。
+```
+
+#### 19 高度な機能
+- unsafe
+```
+　・生ポインタを参照外し
+　・unsafeな関数やメソッドを呼ぶ
+　・可変で静的な変数にアクセスしたり変更したり
+　・unsafeなトレイトを実装
 ```
