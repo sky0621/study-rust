@@ -65,6 +65,13 @@ cargo run
 ## run with stacktrace
 RUST_BACKTRACE=1 cargo run
 
+## def
+
+### トレイト
+- トレイト(trait)とは任意の型となりうるSelfに対して定義されたメソッドの集合のこと。
+- 同じトレイト内で宣言されたメソッド同士はお互いにアクセスすることができる。
+- トレイトはあらゆるデータ型に実装することができる。
+
 ## attention
 
 - Rustにはnull値が存在しない
